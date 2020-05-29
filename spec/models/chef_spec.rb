@@ -17,7 +17,7 @@ RSpec.describe Chef, type: :model do
         DishIngredient.create!(dish: dish_1, ingredient: ingredient_1)
         DishIngredient.create!(dish: dish_1, ingredient: ingredient_2)
 
-        expect(dish_1.total_calories).to eq(150)
+        expect(chef_1.chef_ingredients).to eq(["Meat", "Sauce"])
       end
     end
   end
