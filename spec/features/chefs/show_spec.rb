@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe "Chefs Show Page" do
   describe "When I visit '/chefs/:id'" do
-    it "I see that a chef has ingredients" do
+    it "I see that a chef has a unigue ingredients list" do
       chef_1 = Chef.create(name: "John")
       dish_1 = Dish.create(name: "Meatballs", description: "good food", chef_id: chef_1.id)
       dish_2 = Dish.create(name: "Spagetti", description: "good food", chef_id: chef_1.id)
