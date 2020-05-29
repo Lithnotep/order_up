@@ -11,7 +11,7 @@ RSpec.describe "Chefs Show Page" do
       DishIngredient.create!(dish: dish_1, ingredient: ingredient_2)
 
 
-      visit "/dishes/#{dish_1.id}"
+      visit "/chefs/#{chef_1.id}"
 
       expect(page).to have_content(chef_1.name)
       click_on "Ingredients"
