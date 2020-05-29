@@ -8,6 +8,6 @@ class Chef <ApplicationRecord
         ingredient.name
       end
     end
-    all_ingredients.flatten
+    all_ingredients.flatten.uniq
   end
 end
